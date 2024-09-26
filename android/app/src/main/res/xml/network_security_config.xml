@@ -1,0 +1,11 @@
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">http://116.12.80.10:8080/traceFilling/</domain>
+    </domain-config>
+</network-security-config>
